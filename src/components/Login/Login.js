@@ -7,10 +7,7 @@ async function loginUser(credentials) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(credentials)
-    })
-        .then(data => data.json())
-        .then(data => { return data.token }
-        )
+    }).then(data => data.json())
 }
 
 export default function Login({ setToken }) {
